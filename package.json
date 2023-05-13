@@ -1,0 +1,14 @@
+{
+    "name": "CalendarGenerator",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "author": "Vladimir Ogorodnikov",
+    "dependencies": {
+        "puppeteer": "^20.2.0",
+        "yargs": "^17.7.2"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
+}
