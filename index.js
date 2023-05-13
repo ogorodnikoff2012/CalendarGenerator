@@ -83,7 +83,7 @@ function parseArgs() {
     if (isNaN(year)) {
         throw new Error(`Bad year: ${year}`);
     }
-    return {month, year};
+    return {month, year, output};
 }
 
 async function main() {
@@ -101,7 +101,7 @@ async function main() {
     console.log("[INFO] Loading content");
     await page.goto(website_url, {waitUntil: "networkidle0"});
     await page.emulateMediaType('screen');
-    console.log("[INFO] Exporting to PDF");
+    console.log("[INFO] Exporting to PDF: " + output);
     const pdf = await page.pdf({
         path: output,
         format: "A4",
