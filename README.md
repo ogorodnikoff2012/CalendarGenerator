@@ -11,6 +11,7 @@ yarn start --month may --year 2023 --output example.pdf
 
 Result
 ---
+[PDF](example.pdf)
+
 ![](example.png)
 
-[PDF](example.pdf)
